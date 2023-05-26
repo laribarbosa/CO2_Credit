@@ -68,26 +68,13 @@ figure{
   font-size: 12px;
   text-align: center;
 }
-  
-  *, html, body {
-	margin:0;
-	padding:0;
-	}
-  
-  *, *:before, *:after {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-   }
-/* regra para o clear float */
-.cf:before,
-.cf:after {content: " ";display: table;}
-.cf:after {clear: both;}
-.cf {*zoom: 1;}
-body {
-	margin-left:55px; /* espaço à esquerda para a barra vertical vísivel do menu */
-	font:  62.5%/1.2 Verdana, Helvetica, Arial, sans-serif;
-	}
+
+
+
+@media screen and (max-width: 50px){
+  aside, article{
+    width: 100%;
+  }
 #lateral {
 	padding:0 50px 0 0;
 	-moz-transition: all 0.5s ease;
@@ -173,12 +160,6 @@ left:-500px
 				-o-transition: all 0.5s ease;
 					transition: all 0.5s ease;
 	}
-
-@media screen and (max-width: 50px){
-  aside, article{
-    width: 100%;
-  }
-  body {margin-left:0;background-size:100% 28em!important;}
 #lateral {
 	padding:0;
 	-moz-transition: all 0.5s ease;
